@@ -1,5 +1,7 @@
 (function() {
+    // класс обертки которая добавляется к таблице
     let wrapperClass = 'scrollable';
+    // стили
     let css = '.scrollable { overflow-x: auto; }';
 
     addWrapperTo('table', wrapperClass);
