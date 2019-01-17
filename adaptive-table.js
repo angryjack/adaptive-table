@@ -14,12 +14,7 @@
         let style = document.createElement('style');
 
         style.type = 'text/css';
-        if (style.styleSheet) {
-            // Для IE8 и ниже.
-            style.styleSheet.cssText = styles;
-        } else {
-            style.appendChild(document.createTextNode(styles));
-        }
+        style.appendChild(document.createTextNode(styles));
         head.appendChild(style);
     }
 
